@@ -1,0 +1,25 @@
+.breadcrumbs {
+  padding: 8px 24px;
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumbLink {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbSep {
+  color: #999;
+}
+
+.breadcrumbCurrent {
+  color: #666;
+}

@@ -1,0 +1,393 @@
+/* funeralCard.css */
+
+.program-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.program-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.program-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  max-height: 260px;
+}
+
+.program-title {
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.program-size {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.program-layouts {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+
+.detail-page {
+  display: flex;
+  gap: 48px;
+  padding: 40px 48px;
+  align-items: flex-start;
+}
+
+.detail-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* horizontal centering in a column flex */
+  gap: 16px;
+}
+
+.detail-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.detail-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.detail-description {
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.detail-right {
+  flex: 1;
+  position: sticky;
+  top: 80px;
+}
+
+.detail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #1a1b22;
+  border: 1px solid #2e303a;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.detail-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  letter-spacing: 0.04em;
+}
+
+.detail-form select,
+.detail-form input[type="number"] {
+  background: #16171d;
+  border: 1px solid #2e303a;
+  border-radius: 6px;
+  color: #f3f4f6;
+  font-size: 0.95rem;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-form select:focus,
+.detail-form input[type="number"]:focus {
+  border-color: #aa3bff;
+}
+
+.detail-form select option {
+  background: #16171d;
+  color: #f3f4f6;
+}
+
+.detail-form-submit {
+  background: #aa3bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.detail-form-submit:hover {
+  background: #9333ea;
+}
+
+.detail-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 16px;
+}
+
+.detail-total {
+  display: flex;
+  flex-direction: column;
+  background: #16171d;
+  border: 1px solid #2e303a;
+  border-radius: 8px;
+  padding: 10px 16px;
+  min-width: 100px;
+}
+
+.detail-total-label {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  letter-spacing: 0.04em;
+}
+
+.detail-total-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.detail-form-submit {
+  flex: 1;
+}
+
+.detail-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;  /* add this */
+  margin-top: 16px;
+}
+
+.detail-nav-btn {
+  background: #1a1b22;
+  border: 1px solid #2e303a;
+  border-radius: 6px;
+  color: #f3f4f6;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.detail-nav-btn:hover:not(:disabled) {
+  background: #2e303a;
+  border-color: #aa3bff;
+}
+
+.detail-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.detail-carousel {
+  max-width: 800px;
+  margin: 0 auto;  /* centers it */
+  padding: 40px 48px;
+  border-top: 1px solid #2e303a;
+}
+
+.carousel-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f3f4f6;
+  margin: 0 0 20px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  will-change: transform;
+  flex: 1;
+  min-width: 0;
+  overflow: visible;
+  justify-content: center;  /* add this */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+.carousel-track-outer {
+  flex: 1;
+  min-width: 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; 
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: #2e303a;
+  border-radius: 4px;
+}
+
+.carousel-item {
+  padding: 0 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 112px;  /* 150px * 0.75 */
+}
+
+
+.carousel-item:hover {
+  opacity: 1;
+}
+
+.carousel-item:hover .carousel-thumb {
+  border-color: #2e303a;
+}
+
+.carousel-item:not(:last-child) {
+  opacity: 1;
+}
+
+.carousel-item-active {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.carousel-item-active .carousel-thumb {
+  border: 2px solid #aa3bff;
+}
+
+.carousel-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.carousel-item:hover .carousel-thumb {
+  border-color: #2e303a;
+}
+
+.carousel-label {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.4;
+  margin-top: 6px;
+  width: 100%;     /* constrained by parent */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-arrow {
+  background: #1a1b22;
+  border: 1px solid #2e303a;
+  border-radius: 6px;
+  color: #f3f4f6;
+  font-size: 1.5rem;
+  width: 36px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+  background: #2e303a;
+  border-color: #aa3bff;
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+.homePage {
+  padding-top: 0;
+}
+
+.homeImg {
+  width: 80vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.homeWelcome {
+  font-size: clamp(48px, 12vw, 128px);
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  color: #ffffffb0;
+  text-align: left;
+}
+
+.homeBackgroundWrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.homeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 10;
+  padding-top: 240px;
+  box-sizing: border-box;
+}
+
+.homeBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
